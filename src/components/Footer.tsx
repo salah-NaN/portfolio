@@ -5,18 +5,18 @@ const Footer = () => {
     <footer className="flex justify-between items-center w-full h-20 mt-20 bg-[#000000] border-t border-[#b4b4b4] text-[#e9e9e9]">
       <a
         href="mailto:salahamar9611@gmail.com"
-        className="justify-center items-center gap-1 hidden w-1/3 
+        className="justify-center items-center gap-1 hidden lg:w-1/3 
         lg:flex"
       >
         <img className="size-7" src={mailIcon}></img>
         <p className="text-[15px]">salahamar9611@gmail.com</p>
       </a>
 
-      <div className="w-1/3 text-center">
+      <div className="w-full lg:w-1/3 text-center">
         2024 © Designed and developed by Salah Eddin
       </div>
       <nav
-        className="hidden w-1/3 
+        className="hidden lg:w-1/3 
       lg:flex lg:justify-center lg:items-center lg:gap-4"
       >
         <a
