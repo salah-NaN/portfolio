@@ -55,6 +55,10 @@ const techStack = [
         name: 'Docker',
         img: 'devicon-docker-plain'
     },
+    {
+        name: 'Azure',
+        img: 'devicon-azure-plain'
+    },
 ]
 
 export default techStack

@@ -8,6 +8,7 @@ import TechnologieComponent from "./components/TechnologieComponent";
 import CardTilt from "./components/CardTilt";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer";
 
 interface TechStackItem {
   name: string;
@@ -26,17 +27,6 @@ const App = () => {
   };
 
   return (
-    // <div className="background-animated bg-[#131313] fixed size-full">
-    //   <NavbarC />
-    //   <div className="flex">
-    //     <div className="w-7/12 text-[#fafafa] mt-20">
-    //       Hi! My name is Salah Eddin.
-    //     </div>
-    //     <div className="w-5/12">
-    //       <ThreeDCardDemo />
-    //     </div>
-    //   </div>
-    // </div>
     <div className="fixed w-full h-dvh">
       {/* this is for making fixed all the page */}
       <div className="dark absolute overflow-y-scroll z-50 size-full">
@@ -46,13 +36,14 @@ const App = () => {
           {/* to give a faded look to grid background*/}
           <div className=" absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
           <div
+            id="projects"
             className="w-[89%]
           lg:w-[71%] lg:h-screen"
             ref={refProjects}
           >
             <h2
               className=" relative mt-40 text-5xl text-[#fafafa] font-medium z-50 bg-gradient-to-br from-[#343434] via-[#b3b3b3] to-[#969696] bg-clip-text text-transparent w-fit h-14
-            lg:text-6xl lg:mt-52 lg:h-20 "
+            lg:text-6xl lg:mt-40 lg:h-20 "
             >
               Projects
             </h2>
@@ -66,6 +57,7 @@ const App = () => {
         </div>
         <div className="w-full relative bg-[#000000] z-50 shadow-[0px_-35px_90px_40px_rgba(0,0,0,1)] ">
           <div
+            id="techStack"
             className="w-[89%] mx-auto h-full pb-20
           lg:w-[71%] "
           >
@@ -89,12 +81,13 @@ const App = () => {
             </div>
             <h2
               className="pt-40 pb-[57px] text-5xl font-medium bg-gradient-to-br from-[#343434] via-[#b3b3b3] to-[#969696] bg-clip-text text-transparent w-fit
-            lg:text-6xl lg:pb-24 lg:pt-48"
+            lg:text-6xl lg:pb-24 lg:pt-52"
             >
               Contact
             </h2>
             <ThreeDCardDemo></ThreeDCardDemo>
           </div>
+          <Footer></Footer>
         </div>
       </div>
     </div>

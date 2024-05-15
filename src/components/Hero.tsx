@@ -7,7 +7,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
   return (
-    <div className="h-dvh">
+    <div id="home" className="h-dvh">
       <MaskContainer
         revealText={
           <p
@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
         className="text-2xl"
       >
         <span className="text-red-500">Junior FullStack Developer</span> and
-        <span className="text-red-500"> Computer Science</span> student.
+        <span className="text-red-500"> Computer Engineering</span> student.
       </MaskContainer>
 
       <div

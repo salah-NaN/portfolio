@@ -44,7 +44,7 @@ const ThreeDCardDemo = () => {
           className="  text-[#cacaca] leading-relaxed  mt-4 text-justify w-full
           lg:w-9/12 lg:flex lg:flex-col  lg:mx-auto lg:gap-5 lg:items-center"
         >
-          Developer and computer science student, much of my free time I
+          Developer and computer engineer student, much of my free time I
           dedicate to learning on my own by creating projects or participating
           in community events. I have finished a FullStack bootcamp this year
           and after that my developent skills have grown massively. Whether you
