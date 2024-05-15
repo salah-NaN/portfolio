@@ -1,13 +1,10 @@
-import NavbarC from "./components/NavbarC";
 import ThreeDCardDemo from "./components/ThreeDCard";
 import Hero from "./components/Hero";
-import DotBackgroundDemo from "./components/GridBackgroundDemo";
 import ProjectsTab from "./components/ProjectsTab";
 import techStack from "./utils/technologies";
 import TechnologieComponent from "./components/TechnologieComponent";
 import CardTilt from "./components/CardTilt";
 import { useRef } from "react";
-import { motion } from "framer-motion";
 import Footer from "./components/Footer";
 
 interface TechStackItem {

@@ -3,7 +3,7 @@ import profile from "../../public/profilePixeled.jpg";
 // import Image from "";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
-import { Image, Link } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 
 const ThreeDCardDemo = () => {
   return (
@@ -33,9 +33,6 @@ const ThreeDCardDemo = () => {
           >
             Salah Eddin Amar Nouhi
           </CardItem>
-
-          {/* open for work */}
-          <CardItem as="div" translateZ="60" className="mt-3"></CardItem>
         </div>
         {/* description */}
         <CardItem
@@ -50,6 +47,7 @@ const ThreeDCardDemo = () => {
           and after that my developent skills have grown massively. Whether you
           want to collaborate on a project with me or just feel like chatting,
           feel free to contact me!
+          {/* open for work */}
           <button
             className="hidden cursor-default
       relative lg:inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none "

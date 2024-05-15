@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
           showAnchorIcon
           href="https://www.linkedin.com/in/salah-amar/"
           target="_blank"
-          color="undefined"
+          color="foreground"
         >
           <i className="devicon-linkedin-plain text-[1rem] mr-[6px] text-[#000000]"></i>
           Contact

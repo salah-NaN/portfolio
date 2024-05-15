@@ -1,5 +1,4 @@
 import Tabs from "./ui/tabs";
-import { Image } from "@nextui-org/react";
 import techStack from "../utils/technologies";
 
 interface TechStackItem {
