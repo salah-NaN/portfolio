@@ -2,7 +2,10 @@ import mailIcon from "../assets/mail.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center w-full h-20 mt-20 bg-[#000000] border-t border-[#b4b4b4] text-[#e9e9e9]">
+    <footer
+      className="flex justify-between items-center w-full h-20 mt-28 bg-[#000000] border-t border-[#b4b4b4] text-[#e9e9e9]
+    lg:mt-[103px]"
+    >
       <a
         href="mailto:salahamar9611@gmail.com"
         className="justify-center items-center gap-1 hidden lg:w-1/3 
