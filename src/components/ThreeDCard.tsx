@@ -1,9 +1,7 @@
 "use client";
 import profile from "../assets/profile.jpg";
-// import Image from "";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
-import { Image } from "@nextui-org/react";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 const ThreeDCardDemo = () => {
   return (

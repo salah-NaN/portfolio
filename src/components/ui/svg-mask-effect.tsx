@@ -16,7 +16,7 @@ export const MaskContainer = ({
   revealSize?: number;
   className?: string;
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState<any>({ x: null, y: null });
   const containerRef = useRef<any>(null);
   const updateMousePosition = (e: any) => {
