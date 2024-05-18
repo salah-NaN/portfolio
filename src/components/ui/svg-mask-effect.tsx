@@ -42,12 +42,13 @@ export const MaskContainer = ({
       ref={containerRef}
       className={cn("h-screen relative", className)}
       animate={{
-        backgroundColor: isHovered ? "var(--neutral-900)" : "var(--white)",
+        backgroundColor: isHovered ? "var(--neutral-900)" : "#fbfbfb",
         zIndex: isHovered ? 20 : 0,
       }}
     >
       <motion.div
-        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
+        className={`cursor-default hidden w-full h-full  items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]
+        lg:${mousePosition && mousePosition.y < 780 ? "flex" : "hidden"}`}
         animate={{
           WebkitMaskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
@@ -57,18 +58,18 @@ export const MaskContainer = ({
         transition={{
           type: "tween",
           ease: "backOut",
-          duration: 0.1,
+          duration: 1.1,
           delay: -1,
         }}
       >
         <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
         <div
-          onMouseEnter={() => {
-            setIsHovered(true);
-          }}
-          onMouseLeave={() => {
-            setIsHovered(false);
-          }}
+          // onMouseEnter={() => {
+          //   setIsHovered(true);
+          // }}
+          // onMouseLeave={() => {
+          //   setIsHovered(false);
+          // }}
           className="max-w-4xl mx-auto text-center text-white  text-4xl font-bold relative z-20"
         >
           {children}

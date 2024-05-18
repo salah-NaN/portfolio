@@ -35,11 +35,11 @@ const App = () => {
           <div
             id="projects"
             className="w-[89%]
-          lg:w-[71%] lg:h-screen"
+          lg:w-[71%] lg:h-[900px]"
             ref={refProjects}
           >
             <h2
-              className=" relative mt-40 text-5xl text-[#fafafa] font-medium z-50 bg-gradient-to-br from-[#343434] via-[#b3b3b3] to-[#969696] bg-clip-text text-transparent w-fit h-14
+              className=" relative mt-20 text-5xl text-[#fafafa] font-medium z-50 bg-gradient-to-br from-[#343434] via-[#b3b3b3] to-[#969696] bg-clip-text text-transparent w-fit h-14
             lg:text-6xl lg:mt-40 lg:h-20 "
             >
               Projects
@@ -60,7 +60,7 @@ const App = () => {
           >
             <h2
               className="pt-0 pb-16 text-5xl font-medium bg-gradient-to-br from-[#1e1e1e] via-[#b3b3b3] to-[#505050] bg-clip-text text-transparent w-fit
-            lg:pt-40 lg:text-6xl lg:pb-24"
+             lg:text-6xl lg:pb-24"
             >
               Tech Stack
             </h2>

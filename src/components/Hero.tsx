@@ -1,5 +1,4 @@
 import { MaskContainer } from "./ui/svg-mask-effect";
-import { Link } from "@nextui-org/react";
 
 interface HeroProps {
   scrollDown: () => void;
@@ -11,49 +10,59 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
       <MaskContainer
         revealText={
           <p
-            className="max-w-4xl mx-auto text-[#131313] text-center text-5xl font-bold
-          lg:text-6xl"
+            className="max-w-4xl cursor-default mx-auto text-[#131313] text-center text-5xl font-bold -translate-y-[40%]
+          lg:text-6xl lg:-translate-y-0"
           >
             Salah Eddin Amar Nouhi
           </p>
+          // other alternative: adding a subtitle
+          //   <div
+          //   className="max-w-4xl mx-auto
+          // text-center"
+          // >
+          //   <h1
+          //     className=" text-[#131313]  text-5xl font-bold
+          // lg:text-6xl cursor-move"
+          //   >
+          //     Salah Eddin Amar Nouhi
+          //   </h1>
+          //   <h2 className="text-[#373737] mt-6 mb-5 ">
+          //     Full Stack developer & Software Engineering student
+          //   </h2>
+          // </div>
         }
         className="text-2xl"
       >
-        <span className="text-red-500">Junior FullStack Developer</span> and
-        <span className="text-red-500"> Computer Engineering</span> student.
+        {/* <span className="text-red-500">Junior FullStack Developer</span> and
+        <span className="text-red-500"> Computer Engineering</span> student. */}
       </MaskContainer>
 
       <div
-        className="relative  bottom-1/2 translate-y-[170%] z-0 flex justify-between  w-[225px] mx-auto
-        lg:w-[260px]"
+        className="relative bottom-1/2 translate-y-[120%] z-0 flex justify-between  w-[305px] mx-auto
+        lg:w-[350px] lg:translate-y-[170%]"
       >
-        {/* projects button */}
         <button
-          className=" jello-diagonal
-      relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none "
+          onClick={scrollDown}
+          className="bg-[#131313] px-5 py-1.5 border-2 border-[#131313] rounded-full flex justify-center items-center hover:bg-[#3e3e3e] transition-all duration-400
+          lg:px-8"
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#DEDEDE_0%,#131313_50%,#DEDEDE_100%)]" />
-          <span
-            onClick={scrollDown}
-            className="
-        inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#fafafa] px-3 py-1 text-sm font-medium text-[#131313] backdrop-blur-3xl"
-          >
-            Proyects
-          </span>
+          <p className="text-[#fbfbfb] text-[18px] ">Projects</p>
+          <img
+            className="text-[#fbfbfb] size-6 ml-[6px]"
+            src="/rocket.svg"
+          ></img>
         </button>
 
         {/* contact link/button */}
-        <Link
-          className="text-black flex justify-center items-center vibrate"
-          isBlock
-          showAnchorIcon
+        <a
+          className="text-[#131313] flex justify-center items-center rounded-full border-2 border-[#131313] px-5 py-1.5 hover:bg-[#d8d8d8] transition-all duration-400
+          lg:px-8"
           href="https://www.linkedin.com/in/salah-amar/"
           target="_blank"
-          color="foreground"
         >
-          <i className="devicon-linkedin-plain text-[1rem] mr-[6px] text-[#000000]"></i>
-          Contact
-        </Link>
+          <i className="devicon-linkedin-plain text-[1.3rem] mr-[6px] text-[#131313] "></i>
+          <p className="text-[#131313] text-[18px]">LinkedIn</p>
+        </a>
       </div>
     </div>
   );

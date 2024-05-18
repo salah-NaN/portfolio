@@ -102,16 +102,29 @@ const RejiraContent = () => {
   return (
     <>
       <p
-        className=" mt-5 mb-7 text-[#cacaca] hidden leading-relaxed text-justify
+        className=" mt-5 mb-7 text-[#cacaca] hidden leading-relaxed
       lg:block"
       >
-        This project is a tool designed for software developer teams. To gain
-        access, users must log in. Once logged in, they can create a project and
-        invite collaborators. Within the project, there is a Kanban table where
-        new issues can be added, updated, and deleted, along with their
-        descriptions, priority, and nature. Additional features include
-        assigning issues to other existing users, sorting them using a
-        drag-and-drop system, adding and deleting tags and comments...
+        This project is a{" "}
+        <span className="font-semibold text-[#82b0ff]">tool</span> designed for
+        software developer teams. To gain access, users must{" "}
+        <span className="font-semibold text-[#82b0ff]">log in.</span> Once
+        logged in, they can create a project and{" "}
+        <span className="font-semibold text-[#82b0ff]">
+          invite collaborators
+        </span>
+        . Within the project, there is a{" "}
+        <span className="underline underline-offset-2">Kanban</span> table where
+        new <span className="font-semibold text-[#82b0ff]">issues</span> can be
+        added, updated, and deleted, along with their descriptions, priority,
+        and nature. Additional{" "}
+        <span className="underline underline-offset-2">features</span> include{" "}
+        <span className="font-semibold text-[#82b0ff]">assigning issues</span>{" "}
+        to other existing users, sorting them using a{" "}
+        <span className="font-semibold text-[#82b0ff]">drag-and-drop</span>{" "}
+        system, adding and deleting{" "}
+        <span className="font-semibold text-[#82b0ff]">tags</span> and{" "}
+        <span className="font-semibold text-[#82b0ff]">comments.</span>
       </p>
       <div
         className="flex justify-between items-center 
@@ -164,9 +177,14 @@ const AstropicsContent = () => {
         className=" mt-5 mb-4 text-[#cacaca] hidden leading-relaxed
       lg:block"
       >
-        A web application where logged-in users can view posts from others,
-        sorted chronologically. Additionally, users can upload photos with
-        descriptions and add tags to them.
+        A web application where{" "}
+        <span className="font-semibold text-[#7d53d4]">logged-in</span> users
+        can view posts from others,{" "}
+        <span className="font-semibold text-[#7d53d4]">sorted</span>{" "}
+        chronologically. Additionally, users can{" "}
+        <span className="underline underline-offset-2">upload</span> photos with{" "}
+        <span className="font-semibold text-[#d749a1]">descriptions</span> and
+        add <span className="font-semibold text-[#d749a1]">tags</span> to them.
       </p>
       <div
         className=" flex justify-evenly items-center
@@ -224,13 +242,21 @@ const HanamiContent = () => {
         className=" mt-5 mb-7 text-[#cacaca] hidden leading-relaxed
       lg:block"
       >
-        The project aims to develop a web application where users can check the
-        flowering and fruit status of fruit trees and flowers. Additionally,
-        users can explore activities and locations to observe these events, but
-        only during available seasons. Users can navigate to their desired
-        destinations in two ways: by utilizing the search bar or by using a
-        temporal map. Furthermore, there is a review system, which is accessible
-        only to logged-in users.
+        The <span className="font-semibold text-[#54cd68]">project</span> aims
+        to develop a web application where users can check the{" "}
+        <span className="font-semibold text-[#54cd68]">
+          flowering and fruit
+        </span>{" "}
+        status of fruit trees and flowers. Additionally, users can explore{" "}
+        <span className="underline underline-offset-2">activities</span> and{" "}
+        <span className="underline underline-offset-2">locations</span> to
+        observe these events, but only during available seasons. Users can
+        navigate to their desired destinations in two ways: by utilizing the{" "}
+        <span className="font-semibold text-[#54cd68]">search bar</span> or by
+        using a <span className="font-semibold text-[#54cd68]">temporal</span>{" "}
+        map. Furthermore, there is a{" "}
+        <span className="font-semibold text-[#54cd68]">review</span> system,
+        which is accessible only to logged-in users.
       </p>
       <div
         className="flex justify-between items-center 

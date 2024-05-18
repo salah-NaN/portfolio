@@ -1,5 +1,5 @@
 "use client";
-import profile from "../../public/profilePixeled.jpg";
+import profile from "../assets/profile.jpg";
 // import Image from "";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
@@ -9,57 +9,62 @@ const ThreeDCardDemo = () => {
   return (
     <CardContainer className="inter-var ">
       <CardBody
-        className="bg-[#0d0d0d] flex flex-col relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6 border border-gray-300
-        lg:w-full lg:flex-row  lg:gap-7"
+        className="bg-[#040404] flex flex-col relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6 border border-gray-300
+        lg:w-full lg:flex-row  lg:gap-11"
       >
         <div
           className="flex flex-col
-        lg:w-full lg:shrink"
+        lg:w-full"
         >
           {/* image */}
-          <CardItem translateZ="100" className="w-full mt-4 ">
-            <Image
+          <CardItem translateZ="70" className="w-full mt-4 rounded-xl">
+            <img
               src={profile}
-              height="1000"
-              width="1000"
-              className="h-[255px] w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
+              className=" w-full object-contain object-top rounded-xl"
+            ></img>
           </CardItem>
-          {/* name */}
+          {/* open for work */}
           <CardItem
             translateZ="50"
-            className="text-2xl font-semibold text-[#dadada] mt-4"
+            className="text-2xl font-semibold text-[#dadada] mt-4 w-full flex justify-center"
           >
-            Salah Eddin Amar Nouhi
+            <button
+              className="hidden cursor-default
+      relative lg:inline-flex justify-center h-8 overflow-hidden rounded-full p-[1px] focus:outline-none "
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#131313_0%,#fafafa_50%,#131313_100%)]" />
+              <span
+                className="
+        inline-flex h-full w-full items-center justify-between gap-1.5 rounded-full bg-[#000000] px-3 py-1 text-sm font-medium text-[#eeeeee] backdrop-blur-3xl"
+              >
+                <img className="size-5" src="/handbag.svg"></img>
+                <p className="font-light">Open for work</p>
+              </span>
+            </button>
           </CardItem>
         </div>
         {/* description */}
         <CardItem
           as="p"
           translateZ="50"
-          className="  text-[#cacaca] leading-relaxed  mt-4 text-justify w-full
-          lg:w-9/12 lg:flex lg:flex-col  lg:mx-auto lg:gap-5 lg:items-center"
+          className="  text-[#cacaca] leading-relaxed text-[18px] mt-4  w-full
+          lg:w-9/12 lg:flex lg:flex-col  lg:mx-auto lg:gap-5 lg:items-center font-light"
         >
-          Developer and computer engineer student, much of my free time I
-          dedicate to learning on my own by creating projects or participating
-          in community events. I have finished a FullStack bootcamp this year
-          and after that my developent skills have grown massively. Whether you
-          want to collaborate on a project with me or just feel like chatting,
-          feel free to contact me!
-          {/* open for work */}
-          <button
-            className="hidden cursor-default
-      relative lg:inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none "
-          >
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#131313_0%,#fafafa_50%,#131313_100%)]" />
-            <span
-              className="
-        inline-flex h-full w-full items-center justify-center rounded-full bg-[#000000] px-3 py-1 text-sm font-medium text-[#eeeeee] backdrop-blur-3xl"
-            >
-              Open for work
-            </span>
-          </button>
+          <p>
+            <span className="font-semibold">Full Stack developer</span> and{" "}
+            <span className="italic font-semibold">computer science</span>{" "}
+            student, much of my free time I dedicate to learning on my own by
+            creating <span className="font-semibold">projects</span> or
+            participating in community events .
+          </p>
+          <p>
+            I have finished a{" "}
+            <span className="underline underline-offset-2">bootcamp</span> this
+            year in which I could improve my
+            <span className="font-semibold"> tech and soft skills</span>.
+            Whether you want to collaborate on a project with me or just feel
+            like chatting, feel free to contact me!
+          </p>
         </CardItem>
 
         {/* contact buttons */}
@@ -86,7 +91,7 @@ const ThreeDCardDemo = () => {
           <a href="/CV.pdf" download="CV.pdf">
             <img
               className="hover:scale-125 transition-all duration-300  size-[4.3rem]"
-              src="/adobe.svg"
+              src="/acrobat.svg"
             ></img>
           </a>
         </CardItem>
