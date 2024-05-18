@@ -10,7 +10,7 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
       <MaskContainer
         revealText={
           <p
-            className="max-w-4xl cursor-default mx-auto text-[#131313] text-center text-5xl font-bold -translate-y-[40%]
+            className="max-w-4xl cursor-default mx-auto text-[#131313] text-center text-5xl font-bold -translate-y-1/2
           lg:text-6xl lg:-translate-y-0"
           >
             Salah Eddin Amar Nouhi
@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
       </MaskContainer>
 
       <div
-        className="relative bottom-1/2 translate-y-[120%] z-0 flex justify-between  w-[305px] mx-auto
+        className="relative bottom-1/2 translate-y-1/2 z-0 flex justify-between  w-[305px] mx-auto
         lg:w-[350px] lg:translate-y-[170%]"
       >
         <button
