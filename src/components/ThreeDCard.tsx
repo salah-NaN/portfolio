@@ -86,7 +86,7 @@ const ThreeDCardDemo = () => {
           >
             <i className="devicon-github-original text-[4.3rem] size-full text-[#dedede]"></i>
           </a>
-          <a href="/CV.pdf" download="CV.pdf">
+          <a href="/CV-english.pdf" download="CV-english.pdf">
             <img
               className="hover:scale-125 transition-all duration-300  size-[4.3rem]"
               src="/acrobat.svg"
