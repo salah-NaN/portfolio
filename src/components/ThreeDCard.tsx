@@ -53,7 +53,7 @@ const ThreeDCardDemo = () => {
             <span className="italic font-semibold">computer science</span>{" "}
             student, much of my free time I dedicate to learning on my own by
             creating <span className="font-semibold">projects</span> or
-            participating in community events .
+            participating in community events.
           </p>
           <p>
             I have finished a{" "}

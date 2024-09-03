@@ -48,7 +48,7 @@ export const MaskContainer = ({
     >
       <motion.div
         className={`cursor-default hidden w-full h-full  items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]
-        lg:${mousePosition && mousePosition.y < 780 ? "flex" : "hidden"}`}
+        lg:${mousePosition ? "flex" : "hidden"}`}
         animate={{
           WebkitMaskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
