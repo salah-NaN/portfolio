@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
             className="max-w-4xl cursor-default mx-auto text-[#131313] text-center text-5xl font-bold -translate-y-1/2
           lg:text-6xl lg:-translate-y-0"
           >
-            Salah Eddin Amar Nouhi
+            It's me, Salah.
           </p>
           // other alternative: adding a subtitle
           //   <div
@@ -24,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
           //     className=" text-[#131313]  text-5xl font-bold
           // lg:text-6xl cursor-move"
           //   >
-          //     Salah Eddin Amar Nouhi
+          //     nombre completo
           //   </h1>
           //   <h2 className="text-[#373737] mt-6 mb-5 ">
           //     Full Stack developer & Software Engineering student
@@ -57,11 +57,9 @@ const Hero: React.FC<HeroProps> = ({ scrollDown }) => {
         <a
           className="text-[#131313] flex justify-center items-center rounded-full border-2 border-[#131313] px-5 py-1.5 hover:bg-[#d8d8d8] transition-all duration-400
           lg:px-8"
-          href="https://www.linkedin.com/in/salah-amar/"
-          target="_blank"
         >
           <i className="devicon-linkedin-plain text-[1.3rem] mr-[6px] text-[#131313] "></i>
-          <p className="text-[#131313] text-[18px]">LinkedIn</p>
+          <p className="text-[#131313] text-[18px] cursor-pointer">LinkedIn</p>
         </a>
       </div>
     </div>

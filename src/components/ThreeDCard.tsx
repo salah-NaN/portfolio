@@ -73,20 +73,19 @@ const ThreeDCardDemo = () => {
           lg:flex-col lg:w-1/12"
         >
           <a
-            href="https://www.linkedin.com/in/salah-amar/"
             target="_blank"
             className="hover:scale-125 transition-all duration-300"
           >
             <i className="devicon-linkedin-plain text-[4.3rem] size-full text-[#dedede]"></i>
           </a>
           <a
-            href="https://github.com/salah-NaN"
             target="_blank"
             className="hover:scale-125 transition-all duration-300"
           >
             <i className="devicon-github-original text-[4.3rem] size-full text-[#dedede]"></i>
           </a>
-          <a href="/CV-english.pdf" download="CV-english.pdf">
+          {/* <a href="/CV-english.pdf" download="CV-english.pdf"> */}
+          <a>
             <img
               className="hover:scale-125 transition-all duration-300  size-[4.3rem]"
               src="/acrobat.svg"
@@ -119,7 +118,7 @@ export default ThreeDCardDemo;
 //             translateZ="50"
 //             className="text-2xl font-bold text-[#fafafa]"
 //           >
-//             Salah Eddin Amar Nouhi
+//             nombre completo
 //           </CardItem>
 //           <CardItem
 //             as="p"

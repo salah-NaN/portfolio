@@ -20,11 +20,7 @@ const ProjectsTab = () => {
             <p className="text-2xl md:text-4xl font-semibold text-[#d9d9d9]">
               Rejira
             </p>
-            <a
-              className="block lg:hover:scale-110 lg:transition-all lg:sduration-300"
-              target="_blank"
-              href="https://github.com/salah-NaN/rejira"
-            >
+            <a className="block lg:hover:scale-110 lg:transition-all lg:sduration-300">
               <i
                 className="devicon-github-original text-[1.8rem] w-fit text-[#dedede]
             lg:text-[2.8rem] "
@@ -47,11 +43,7 @@ const ProjectsTab = () => {
             <p className="text-2xl md:text-4xl font-semibold text-[#d9d9d9]">
               Astropics
             </p>
-            <a
-              className="block lg:hover:scale-110 lg:transition-all lg:sduration-300"
-              target="_blank"
-              href="https://github.com/salah-NaN/fjs-astropics"
-            >
+            <a className="block lg:hover:scale-110 lg:transition-all lg:sduration-300">
               <i
                 className="devicon-github-original text-[1.8rem] w-fit text-[#dedede]
             lg:text-[2.8rem] "
@@ -74,11 +66,7 @@ const ProjectsTab = () => {
             <p className="text-2xl md:text-4xl font-semibold text-[#d9d9d9]">
               Hanami
             </p>
-            <a
-              className="block lg:hover:scale-110 lg:transition-all lg:sduration-300"
-              target="_blank"
-              href="https://github.com/salah-NaN/front-hanami"
-            >
+            <a className="block lg:hover:scale-110 lg:transition-all lg:sduration-300">
               <i
                 className="devicon-github-original text-[1.8rem] w-fit text-[#dedede]
             lg:text-[2.8rem] "

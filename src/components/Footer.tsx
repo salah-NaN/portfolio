@@ -7,16 +7,16 @@ const Footer = () => {
     lg:mt-[103px]"
     >
       <a
-        href="mailto:salahamar9611@gmail.com"
+        href="mailto:salah@gmail.com"
         className="justify-center items-center gap-1 hidden lg:w-1/3 
         lg:flex"
       >
         <img className="size-7" src={mailIcon}></img>
-        <p className="text-[15px]">salahamar9611@gmail.com</p>
+        <p className="text-[15px]">salah@gmail.com</p>
       </a>
 
       <div className="w-full lg:w-1/3 text-center">
-        2024 © Designed and developed by Salah Eddin
+        2024 © Designed and developed by Salah
       </div>
       <nav
         className="hidden lg:w-1/3 
