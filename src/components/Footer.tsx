@@ -7,7 +7,7 @@ const Footer = () => {
     lg:mt-[103px]"
     >
       <a
-        href="mailto:salah@gmail.com"
+        href="mailto:salahamar@gmail.com"
         className="justify-center items-center gap-1 hidden lg:w-1/3 
         lg:flex"
       >
