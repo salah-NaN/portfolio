@@ -16,7 +16,7 @@ const Footer = () => {
       </a>
 
       <div className="w-full lg:w-1/3 text-center">
-        2024 © Designed and developed by Salah
+        2025 © Designed and developed by Salah
       </div>
       <nav
         className="hidden lg:w-1/3 
